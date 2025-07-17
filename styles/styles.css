@@ -13,25 +13,29 @@
   --slate-900: hsl(218, 44%, 22%);
 }
 
-body { 
+body {
     background-color: var(--slate-300);
-    padding: 25px;
-    font-family: Outfit, sans-serif;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
 
+    /* 1. Usamos Flexbox para controlar el layout */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 1.5rem; 
 }
 
-.qr-card { 
+.qr-card {
     background-color: var(--white);
     width: 100%;
-    max-width: 375px;
+    max-width: 320px; 
     border-radius: 20px;
     padding: 1rem;
-    box-shadow: 2px 2px 10px #1f32511a;
+    box-shadow: 0 15px 30px hsla(218, 44%, 22%, 0.1);
     text-align: center;
-
+    margin-bottom: 3rem; /* Añadimos un margen para separar del footer */
 }
 
 .qr-card__image img { 
@@ -65,7 +69,6 @@ body {
     text-align: center;
     padding: 1rem;
     color: var(--slate-500);
-    position: absolute; /* Para posicionarlo abajo */
     bottom: 0;
     width: 100%;
 }
