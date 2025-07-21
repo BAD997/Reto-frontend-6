@@ -72,4 +72,9 @@ body {
     bottom: 0;
     width: 100%;
 }
+.attribution a { 
+    text-decoration: none;
+    color: var(--slate-900);
+    font-weight: 700;
+}
 
